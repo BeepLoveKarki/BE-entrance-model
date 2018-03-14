@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['user']) && isset($_SESSION['symbol']))
 {
-  header("Location:http://localhost/entrance/question.php");
+  header("Location:question.php");
 }
 if(isset($_SESSION['start']))
 {
@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
  session_start();
  $_SESSION['user']=$_POST['name'];
  $_SESSION['symbol']=$_POST['symbol'];
- header("Location:http://localhost/entrance/question.php");
+ header("Location:question.php");
 }
 ?>
 <!DOCTYPE html>
@@ -133,7 +133,7 @@ if((m==-1)||(n==-1)||(m!=n))
 </script>
 </head>
 <body>
-<img src="http://localhost/entrance/img.gif" class="imag"/>
+<img src="img.gif" class="imag"/>
 <div class="forme">
 <form action="" method="POST" name="fo">
 <label class="namel">Name<input type="text" id="name" class="name" name="name" autocomplete="off"/></label><br><br>
