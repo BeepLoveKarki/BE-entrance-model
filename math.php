@@ -62,7 +62,7 @@ for($i=0;$i<=5;$i++)
       }
   }
 }
-$fp=fopen("C:/xampp/htdocs/entrance/result.txt","a");
+$fp=fopen("result.txt","a");
 $mp=$_SESSION['user'];
 $n=$_SESSION['symbol'];
 fwrite($fp,$mp.PHP_EOL.$n.PHP_EOL.$score.PHP_EOL.PHP_EOL);
@@ -78,7 +78,7 @@ if($mr==$_POST['submit1'])
   $_SESSION['start']=0;
 }
 echo("<script type='text/javascript'>");
-echo("setTimeout(");header("Location:http://localhost/entrance/welcome.php");echo(",10000");
+echo("setTimeout(");header("Location:welcome.php");echo(",10000");
 echo("</script>");
 }
 ?>
